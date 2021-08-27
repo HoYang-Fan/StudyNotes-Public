@@ -14,9 +14,9 @@ private string Excel107ConString = "Provider=Microsoft.ACE.OLEDB.12.0; Data Sour
 ```
 
 ```C#
-private void ImportExcel()
+private void openFileDialog_FileOK()
 {
-    string filePath = openFileDialog.FileName;
+    string filePath = openFileDialog1.FileName;
     string extension = Path.GetExtension(filePath);
     string header = rdHeaderYes.Checked? "Yes" : "NO";
     string conStr, sheetName;
